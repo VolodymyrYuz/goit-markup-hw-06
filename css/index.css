@@ -50,7 +50,8 @@ button {
 
 .container {
   max-width: 100%;
-  width: 1158px;
+  /* width: 1158px; */
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -252,12 +253,14 @@ button {
 /*-----------------VALUES-----------------------*/
 
 .values {
-  padding: 120px 0px;
+  /* padding: 120px 0px; */
+  padding: 24px 16px;
 }
 
 .values-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
 }
 
 .values-list-images {
@@ -272,17 +275,17 @@ button {
   justify-content: center;
   padding: 24px 100px;
   margin-bottom: 8px;
-}
-
-.values-list-item {
-  width: calc((100% - 24px * 3) / 4);
+  display: none;
 }
 
 .values-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  /* font-size: 20px; */
+  font-size: 36px;
+  /* font-weight: 500; */
+  font-weight: 700;
+  /* line-height: 1.2; */
+  line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
@@ -292,12 +295,12 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 /*----------------------------------------*/
 
 /*-----------------TEAM-----------------------*/
-
 .team {
   background: var(--CLOUD, #f4f4fd);
   padding: 120px 0px;
@@ -890,4 +893,43 @@ button {
 .svg-footer-btn-icon {
   margin-left: 16px;
   stroke: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .values-list {
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .values-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .values {
+    padding: 120px 0px;
+  }
+
+  .values-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .values-list-images {
+    display: flex;
+  }
+
+  .values-list-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
 }
