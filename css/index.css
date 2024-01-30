@@ -82,7 +82,7 @@ button {
 
 .header-container {
   display: flex;
-  padding: 0 15px;
+  padding: 17.5px 15px;
 }
 
 .header-navigation {
@@ -120,6 +120,8 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
+
+  display: none;
 }
 
 .header-menu-link-first::after {
@@ -136,6 +138,7 @@ button {
 
 .header-address {
   font-style: normal;
+  display: none;
 }
 
 .header-menu-link {
@@ -194,7 +197,8 @@ button {
 /*-----------------HERO-----------------------*/
 
 .hero {
-  padding: 188px 0px;
+  /* padding: 188px 0px; */
+  padding: 72px 52px;
   flex-shrink: 0;
   background-color: var(--NAVY-BLUE, #2e2f42);
   background-image: linear-gradient(
@@ -206,12 +210,13 @@ button {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .hero-title {
   color: var(--WHITE, #fff);
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
