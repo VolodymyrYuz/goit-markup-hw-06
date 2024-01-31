@@ -57,28 +57,30 @@
           </ul>
         </address>
         <button type="button" class="menu-open-btn">
-          <svg width="24" height="24">
+          <svg width="24" height="24" class>
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
       </div>
       <div class="mob-menu">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="mob-close-btn">
           <svg class="svg-modal-close-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <ul class="mob-menu-list">
-          <li class="mob-menu-item">
-            <a class="mob-menu-link-first" href="./index.html">Studio</a>
-          </li>
-          <li class="mob-menu-item">
-            <a class="mob-menu-link" href="">Portfolio</a>
-          </li>
-          <li class="mob-menu-item">
-            <a class="mob-menu-link" href="">Contacts</a>
-          </li>
-        </ul>
+        <nav class="mob-nav">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link-first" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
         <address class="header-mob-address">
           <ul class="mob-address-list">
             <li class="mob-address-item">
@@ -105,10 +107,7 @@
             <li class="mob-list-icon">
               <a href="" class="mob-social-list-link">
                 <svg class="svg-soc-mob" width="24" height="24">
-                  <use
-                    class="svg-soc-footer"
-                    href="./images/icons.svg#icon-twitter-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
@@ -584,7 +583,7 @@
       </div>
     </footer>
     <!-- BACKDROP -->
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="svg-modal-close-btn" width="8" height="8">
@@ -667,6 +666,6 @@
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
