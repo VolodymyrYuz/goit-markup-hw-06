@@ -461,6 +461,8 @@ button {
 .team-list-img {
   align-items: center;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-personal-container {
@@ -586,6 +588,8 @@ button {
   background: url(<path-to-image>),
     lightgray -25.026px 0px / 125% 100% no-repeat;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-img-text {
